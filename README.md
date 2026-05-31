@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CivilAI — AI Civil Engineering Assistant
 
-## Getting Started
+A standalone web application for civil engineers to enter building parameters and receive AI-generated preliminary structural engineering studies. All data is stored locally in your browser — no database, no login, no configuration required.
 
-First, run the development server:
+## Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — the dashboard loads immediately.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Dashboard** — Total projects, saved reports, recent activity
+- **New Project** — Full building parameter form
+- **Engineering Study Generator** — Column grid, beams, slabs, foundations, risk warnings
+- **PDF Export** — Download professional engineering reports
+- **Project History** — Search, duplicate, edit, delete
+- **Local Storage** — All projects persist in your browser
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS 4
+- jsPDF (PDF export)
+- Browser localStorage (data persistence)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Data Storage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Projects are saved under the `civilai_projects` key in browser localStorage. Data stays on your device and is not sent to any server. Clearing browser data will remove your projects.
 
-## Deploy on Vercel
+## Disclaimer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+These results are preliminary engineering recommendations and must be reviewed and approved by a licensed structural engineer.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+Private — All rights reserved.
